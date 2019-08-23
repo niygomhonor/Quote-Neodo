@@ -8,9 +8,10 @@ import { Quote } from '@angular/compiler';
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
+  
 @Input() quote:Quote;
 @Output() isWritten=new EventEmitter<boolean>();
-quoteWritten(written:boolean){
+quoteDelete(written:boolean){
   this.isWritten.emit(written)}
 
   constructor() { }
