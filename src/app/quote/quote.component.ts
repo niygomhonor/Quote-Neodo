@@ -8,10 +8,6 @@ import{ Quote} from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[]=[
-    // {nbr:1, nameQuote:'Never give up' , descriptQuote:'asdfghjk'},
-    // {nbr:2, nameQuote:'Never give up',descriptQuote:'asdfghjk'},
-    // {nbr:3, nameQuote:'Never give up',descriptQuote:'asdfghjk'}]
-
     new Quote(1,'You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you.','Dale Carnegie','I have to buy cookies for the parrot',new Date(2019,6,9)),
   ];
 
