@@ -1,14 +1,15 @@
-
+<div class="jumbotron">
 <div class="container-fluid">
     <h2 class="text-center">Create a new Quote</h2>
 
     <hr>
     <!-- ************************Submittinf form code ***********************************-->
-    <form #quoteForm="ngForm">
+    <form (ngSubmit)='submitQuote()' #quoteForm="ngForm">
+
         <div class="form-group">
   
             <label for="name">Quote Author</label>
-            <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.quoteAuthor" name="quoteAuthor" #quoteAuthor="ngModel" required>
+            <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.quoteAuthor" name="quoteAuthor" #quoteAuthor="ngModel" placeholder="Author name" required>
             <div [hidden]="quoteAuthor.valid || quoteAuthor.pristine" class="alert alert-danger">
               <p>Author is required</p>
             </div>
@@ -16,7 +17,7 @@
         <div class="form-group">
   
                 <label for="name">Quote </label>
-                <input type="text" class="form-control" id="name"[(ngModel)]="newQuote.nameQuote" name="nameQuote" #nameQuote="ngModel"  required>
+                <input type="text" class="form-control" id="name"[(ngModel)]="newQuote.nameQuote" name="nameQuote" #nameQuote="ngModel" placeholder="Quote" required>
                 <div [hidden]="nameQuote.valid || nameQuote.pristine" class="alert alert-danger">
                   <p>Quote is required</p>
                 </div>
@@ -25,7 +26,7 @@
             <div class="form-group">
       
                     <label for="Date">Written Date</label><br>
-                    <input type="date" id="written" [(ngModel)]="newQuote. writtenDate" name=" writtenDate" #writtenDate="ngModel" required>
+                    <input type="date" id="written" [(ngModel)]="newQuote. writtenDate" name=" writtenDate" #writtenDate="ngModel" placeholder="Written date" required>
                     <div [hidden]=" writtenDate.valid || writtenDate.pristine" class="alert alert-danger">
                       <p>Date is required</p>
                     </div>
@@ -33,7 +34,7 @@
         <div class="form-group">
   
             <label for="description">Description</label>
-            <textarea class="form-control" id="description" rows="4"  [(ngModel)]="newQuote.descriptQuote" name="descriptQuote"  #descriptQuote="ngModel" required></textarea>
+            <textarea class="form-control" id="description" rows="4"  [(ngModel)]="newQuote.descriptQuote" name="descriptQuote"  #descriptQuote="ngModel" placeholder="Description of quote" required></textarea>
             <div [hidden]=" descriptQuote.valid || descriptQuote.pristine" class="alert alert-danger">
               <p>Quote description is required</p>
             </div>
@@ -43,3 +44,4 @@
         <button type="submit" class="btn btn-success">Add new Quote</button>
     </form>
   </div>
+</div>
