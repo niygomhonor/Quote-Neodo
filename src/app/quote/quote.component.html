@@ -1,32 +1,36 @@
-<h1>Create your own QUOTES </h1>
-
-
+<h1 class="text-center">Create your own QUOTES </h1>
 
 <div class="container">
-    <h1>My Quotes</h1>
+        <fieldset>
+       
     <hr>
+
     <div class="row">
         <div class="col-md-6">
            
                 <div *ngFor='let quote of quotes;let i = index'>
  
-             <h6 id={{i}}> {{quote.nameQuote}}  written on {{quote.writtenDate|date}} </h6>
+             <h6 id={{i}}> {{quote.nameQuote}}  written on {{quote.writtenDate|date}} </h6><br>
+             <div> 
+                 <app-vote></app-vote>
+                </div>
+                <br>
             <button (click)='toggleDetails(i)' class="btn btn-primary">Quote Details</button>
         
-<app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isWritten)='deleteQuote($event,i)'></app-quote-details>
+  <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isWritten)='deleteQuote($event,i)'></app-quote-details>
         
       </div>
     </div>
     <div class="col-md-6">
-            <app-quote-form></app-quote-form>
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
-</div>
+   </div>
+  
     <p *ngIf='quotes.length > 5'>You have too many goals</p> 
-
-
-
-<div>
+</fieldset>
         
+</div>
+ 
         
 
  
