@@ -1,6 +1,6 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+TThis is a quotes application that allow auser to create quotes and vote what they liked[Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
 ## Development server
 
