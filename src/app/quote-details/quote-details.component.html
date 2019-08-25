@@ -1,6 +1,10 @@
 <div>
-    <p> It is written by <b>{{quote.quoteAuthor}}</b></p>
+    
 <p>{{ quote.descriptQuote}}</p>
-<p > The days passed since this quote written is  {{quote.writtenDate|dateCount}} </p>
-<button class="btn btn-danger" (click)='quoteDelete(true)'>Delete Quote</button>
+<p> This quote was submitted in <b> {{quote.writtenDate|dateCount}} days ago </b> </p>
+<p> Author : <b>{{quote.quoteAuthor}}</b></p>
+<p> Submitted by <b>{{quote.submitPerson}}</b></p>
+
+
+<button type="button" class="btn btn-dark" (click)='quoteDelete(true)'>Delete Quote</button>
 </div>
