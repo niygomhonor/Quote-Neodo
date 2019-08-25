@@ -8,7 +8,11 @@ import{ Quote} from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[]=[
-    new Quote(1,'You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you.','Dale Carnegie','I have to buy cookies for the parrot',new Date(2019,6,9)),
+   
+    new Quote(1,'You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you.','Dale Carnegie','','Honorine',new Date(2019,6,9),0,0),
+    new Quote(2,"If you can't explain it simply, you don't understand it well enough.",'Isaac Einstein','','Honorine',new Date(2019,6,9),0,0),
+    new Quote(3,"If you can't explain it simply, you don't understand it well enough.",'Isaac Einstein','','Honorine',new Date(2019,6,9),0,0),
+    new Quote(4,"If you can't explain it simply, you don't understand it well enough.",'Isaac Einstein','','Honorine',new Date(2019,6,9),0,0),
   ];
 
     toggleDetails(index){
@@ -18,7 +22,7 @@ export class QuoteComponent implements OnInit {
 
     if (isWritten) {
       
-let toDelete= confirm(`Are you sure you want to delete ${this.quotes[index].nameQuote} Quote?`);
+let toDelete= confirm(`Are you sure you want to delete this Quote?`);
 
 if (toDelete){
   this.quotes.splice(index,1)
@@ -29,6 +33,33 @@ if (toDelete){
       quote.id=quoteLength+1;
       quote.writtenDate=new Date(quote.writtenDate);
       this.quotes.push(quote);
+    }
+    upVote=0;
+    downVote=0;
+    
+    increaseUpVote(i){
+      this.quotes[i].upVote++;
+    }
+    increaseDownVote(i){
+      this.quotes[i].downVote++;
+    }
+  
+      counter:number;
+      firstNumber:number;
+      lastNumber:number;
+
+    highlight(){
+      this.firstNumber=0;
+      this.lastNumber=0;
+
+     for(this.counter=0;this.counter<this.quotes.length;this.counter++){
+       this.lastNumber=this.quotes[this.counter].upVote;
+       if (this.lastNumber>this.firstNumber) {
+         this.firstNumber=this.lastNumber;
+       }
+       
+     }
+     return this.firstNumber;
     }
   constructor() { }
 
