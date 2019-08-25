@@ -1,11 +1,9 @@
 export class Quote {
-    // nbr:number;
-    // nameQuote:string;
-    // descriptQuote:string;
-    // writtenDate: Date
+  vote:number;
     showDescription:boolean;
-    constructor( public  id:number,public  nameQuote:string, public quoteAuthor:string,public  descriptQuote:string, public writtenDate: Date) {
+    constructor( public  id:number,public  nameQuote:string, public quoteAuthor:string,public  descriptQuote:string, public submitPerson:string, public writtenDate: Date,public downVote:number,public upVote:number) {
         this.showDescription=false;
+        
     }
 }
 
