@@ -1,3 +1,13 @@
-form{
-    background-image: green;
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Kalam&display=swap');
+h2{
+    font-family: 'Concert One', cursive;
+}
+label{
+    font-family: 'Kalam', cursive;  
+}
+::placeholder{
+    font-family: 'Kalam', cursive; 
+}
+.btn{
+    font-family: 'Concert One', cursive;  
 }
