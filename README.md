@@ -4,9 +4,9 @@ TThis is a quotes application that allow auser to create quotes and vote what th
 
 ## Contents are the following
 
-[X] Application use
-[x] Technologies used
-[x] Behavior Driven Development
++  Application use
++  Technologies used
++  Behavior Driven Development
 
 ## Code scaffolding
 
