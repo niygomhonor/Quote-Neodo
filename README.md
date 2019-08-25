@@ -1,10 +1,12 @@
 # Quotes
 
-TThis is a quotes application that allow auser to create quotes and vote what they liked[Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+TThis is a quotes application that allow auser to create quotes and vote what they liked.
 
-## Development server
+## Contents are the following
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[x] Application use
+[x] Technologies used
+[x] Behavior Driven Development
 
 ## Code scaffolding
 
