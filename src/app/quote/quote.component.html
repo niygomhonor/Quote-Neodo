@@ -1,25 +1,32 @@
-<h1 class="text-center">Create your own QUOTES </h1>
-
+<div class="wholebody">
+<h1 class="text-center"> ----QUOTES CREATION ---- </h1>
+<h1 class="text-center"> ----WEB APP---- </h1>
 <div class="container">
         <fieldset>
        
     <hr>
-
+   
     <div class="row">
         <div class="col-md-6">
            
+                <h2>QUOTES</h2><br>
+               
                 <div *ngFor='let quote of quotes;let i = index'>
- 
-             <h6 id={{i}}> {{quote.nameQuote}}  written on {{quote.writtenDate|date}} </h6><br>
-             <div> 
-                 <app-vote></app-vote>
-                </div>
-                <br>
-            <button (click)='toggleDetails(i)' class="btn btn-primary">Quote Details</button>
+ <div class="card">
+             <h5  appHighlight  *ngIf="highlight()===quote.upVote && quote.downVote>0">  <b>"{{quote.nameQuote}} " </b><br> It is submitted on <b>{{quote.writtenDate|date}}</b> </h5><br>
+             <h5 *ngIf="highlight()!==quote.upVote||quote.downVote==0">{{quote.nameQuote}}</h5>
+             
+                <div>
+                    <button type="button" (click)='increaseUpVote(i)'><img src="http://images.clipartpanda.com/like-clipart-noun-project-330.png" height="30" width="30" alt="vote">{{quote.upVote}}</button>
+                <button type="button" (click)='increaseDownVote(i)'><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTPG52HQTVi5P_dWu1VCHmoKsbiy48N_KHu_tAg39s2rqtWPKB" height="30" width="30" alt="vote">{{quote.downVote}}</button>
+                    </div>
+                
+            <h3><button (click)='toggleDetails(i)' class="btn btn-link"> Quote Details</button></h3>
         
   <app-quote-details *ngIf='quote.showDescription' [quote]='quote' (isWritten)='deleteQuote($event,i)'></app-quote-details>
-        
+</div>
       </div>
+    
     </div>
     <div class="col-md-6">
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
@@ -30,6 +37,8 @@
 </fieldset>
         
 </div>
+</div>
+
  
         
 
