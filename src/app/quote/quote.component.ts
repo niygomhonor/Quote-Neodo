@@ -9,8 +9,8 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[]=[
    
-    new Quote(1,'You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you.','Dale Carnegie','','Honorine',new Date(2019,6,9),0,0),
-    new Quote(2,"If you can't explain it simply, you don't understand it well enough.",'Isaac Einstein','','Honorine',new Date(2019,6,9),0,0),
+    new Quote(1,'You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you.','Dale Carnegie','Honorine',new Date(2019,6,9),0,0),
+    new Quote(2,"If you can't explain it simply, you don't understand it well enough.",'Isaac Einstein','Honorine',new Date(2019,6,9),0,0),
     
   ];
 
