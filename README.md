@@ -15,6 +15,12 @@ TThis is a quotes application that allow auser to create quotes and vote what th
 QUOTE-NEODO is an application that allow user to `write/create quotes ` and have them `posted` , be `voted` and `highlight ` quote with more .
 
 
+###  Navigate link bellow
+
+[QUOTE CREATION]()
+
+
+
 ## TECHNOLOGIES USED 
 
 + `Angular CLI` which includes
@@ -55,6 +61,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 +  LinkedIn:NIYONKURU Honorine
 +  Facebook:NIYONKURU Neodo Honorine
 +  Slack:NIYONKURU Honorine
+
 
 
 ## Further help
