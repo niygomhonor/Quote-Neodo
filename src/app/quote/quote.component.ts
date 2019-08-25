@@ -11,8 +11,7 @@ export class QuoteComponent implements OnInit {
    
     new Quote(1,'You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you.','Dale Carnegie','','Honorine',new Date(2019,6,9),0,0),
     new Quote(2,"If you can't explain it simply, you don't understand it well enough.",'Isaac Einstein','','Honorine',new Date(2019,6,9),0,0),
-    new Quote(3,"If you can't explain it simply, you don't understand it well enough.",'Isaac Einstein','','Honorine',new Date(2019,6,9),0,0),
-    new Quote(4,"If you can't explain it simply, you don't understand it well enough.",'Isaac Einstein','','Honorine',new Date(2019,6,9),0,0),
+    
   ];
 
     toggleDetails(index){
@@ -34,6 +33,7 @@ if (toDelete){
       quote.writtenDate=new Date(quote.writtenDate);
       this.quotes.push(quote);
     }
+
     upVote=0;
     downVote=0;
     
@@ -56,11 +56,15 @@ if (toDelete){
        this.lastNumber=this.quotes[this.counter].upVote;
        if (this.lastNumber>this.firstNumber) {
          this.firstNumber=this.lastNumber;
+        
        }
-       
+      
      }
+    //  console.log(this.firstNumber);
      return this.firstNumber;
+   
     }
+   
   constructor() { }
 
   ngOnInit() {

@@ -10,14 +10,14 @@ h2{
     font-family: 'Concert One', cursive;
     position: relative;
     left: 30%;
-    color: #000;   
+    color:whitesmoke;   
 }
 h5{
     font-family: 'Kalam', cursive;
     position: relative;
    /* background-color: darkkhaki;
    border: 6px solid red; */
-    color: whitesmoke;
+    color: #000;
 }
 .btn{
     font-family: 'Concert One', cursive;
@@ -33,12 +33,12 @@ button{
 }
 fieldset{
    
-        background-image: url("https://www.herz-bag.jp/webshop/user_data/img/products/kb/kb101/main.jpg");
+       background-color: #000;
         position:absolute;
         background-size: cover;
 }
 .card{
-    background-image: url("https://images.unsplash.com/photo-1559125148-869baf508c95?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-image: url("https://images.unsplash.com/photo-1511109520219-fec6140bf9d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80");
     background-size: cover;
     height: 20%;
     left:5%;
