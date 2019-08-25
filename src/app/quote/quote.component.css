@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One|Kalam&display=swap');
+
+h1{
+    font-family: 'Concert One', cursive;
+    position: relative;
+    color: #000;
+   
+}
+h2{
+    font-family: 'Concert One', cursive;
+    position: relative;
+    left: 30%;
+    color: #000;   
+}
+h5{
+    font-family: 'Kalam', cursive;
+    position: relative;
+   /* background-color: darkkhaki;
+   border: 6px solid red; */
+    color: whitesmoke;
+}
+.btn{
+    font-family: 'Concert One', cursive;
+    font-size: 30px;
+    color:  black;
+    position: relative;
+    left: 20%;
+    
+}
+button{
+    position: relative;
+    left:40%;
+}
+fieldset{
+   
+        background-image: url("https://www.herz-bag.jp/webshop/user_data/img/products/kb/kb101/main.jpg");
+        position:absolute;
+        background-size: cover;
+}
+.card{
+    background-image: url("https://images.unsplash.com/photo-1559125148-869baf508c95?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-size: cover;
+    height: 20%;
+    left:5%;
+    border-radius:20px;
+    margin: 30px;
+}
+
