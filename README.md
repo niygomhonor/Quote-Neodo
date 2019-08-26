@@ -17,7 +17,7 @@ QUOTE-NEODO is an application that allow user to `write/create quotes ` and have
 
 ###  Navigate link bellow
 
-[QUOTE CREATION]()
+[QUOTE CREATION](https://niygomhonor.github.io/Quote-Neodo/)
 
 
 
@@ -70,3 +70,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## LISENCE
+
++ MIT
+
+  Copyright (c) [2019][NIYONKURU Honorine]
